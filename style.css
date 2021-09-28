@@ -162,7 +162,7 @@ body{
     background-color:#ffd2c4;
 }
 .checkbox{
-    margin: 40px 0 ;
+    margin: 20px 0 ;
 }
 .checkbox div {
     margin-bottom: 25px;
@@ -172,7 +172,7 @@ body{
     margin-right: 15px;
 }
 button{
-    width: 80%;
+    width: 90%;
     background-color: white;
     border: 3px solid purple;
     border-radius: 8px;
@@ -195,13 +195,18 @@ button:hover{
     grid-template-columns: repeat(4,1fr);
 }
 .box{
-
     padding: 20px 20px;
-
 }
 .title h1{
     color: #504477;
 }
 .title h4{
     color: #b1b0b6;
+}
+@media only screen and (max-width: 700px) {
+    .cards{
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+
 }
