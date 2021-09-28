@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link href="style.css" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+<div class="header">
+    <div class="title">
+        <h1> Simple, transparent pricing</h1>
+        <h4> No contrast, No surprise fees</h4>
+    </div>
+    <div class="btn btn-1">
+        <input type="checkbox" name="" id="switch">
+        <label for="switch"></label>
+
+    </div>
+</div>
+<div class="middle">
+    <div class="slider-container">
+        <span class="bar"><span class="fill"></span></span>
+        <input id="slider" class="slider" type="range" min="0" max="100" value="50">
+    </div>
+</div>
+<div class="cards">
+    <div class="box box1">
+        <h4> Intro</h4>
+        <p><span class="price">$19</span>/month</p>
+        <p> For most business that want<br>to optimize web queries</p>
+        <div class="checkbox">
+            <div><img src="icon/check_circle_black_24dp.svg"><span>All limited links</span></div>
+            <div><img src="icon/check_circle_black_24dp.svg"><span>Own analytics platform</span></div>
+            <div><img src="icon/check_circle_black_24dp.svg"><span>Chat support</span></div>
+            <div><img src="icon/check_circle_black_24dp.svg"><span>Optimize Hashtag</span></div>
+            <div><img src="icon/check_circle_black_24dp.svg"><span>Unlimited users</span></div>
+        </div>
+        <button>Choose plan</button>
+    </div>
+    <div class="box box2">
+        <h4> intro</h4>
+        <p><span class="price">$39</span>/month</p>
+        <p> For most business that want<br>to optimize web queries</p>
+        <div class="checkbox">
+            <div><img src="icon/check_circle_black_24dp.svg"><span>All limited links</span></div>
+            <div><img src="icon/check_circle_black_24dp.svg"><span>Own analytics platform</span></div>
+            <div><img src="icon/check_circle_black_24dp.svg"><span>Chat support</span></div>
+            <div><img src="icon/check_circle_black_24dp.svg"><span>Optimize Hashtag</span></div>
+            <div><img src="icon/check_circle_black_24dp.svg"><span>Unlimited users</span></div>
+        </div>
+        <button>Choose plan</button>
+    </div>
+    <div class="box box3">
+        <h4>Base</h4>
+        <p><span class="price">$99</span>/month</p>
+        <p> For most business that want<br>to optimize web queries</p>
+        <div class="checkbox">
+            <div><img src="icon/check_circle_black_24dp.svg"><span>All limited links</span></div>
+            <div><img src="icon/check_circle_black_24dp.svg"><span>Own analytics platform</span></div>
+            <div><img src="icon/check_circle_black_24dp.svg"><span>Chat support</span></div>
+            <div><img src="icon/check_circle_black_24dp.svg"><span>Optimize Hashtag</span></div>
+            <div><img src="icon/check_circle_black_24dp.svg"><span>Unlimited users</span></div>
+        </div>
+        <button>Choose plan</button>
+    </div>
+    <div class="box box4">
+        <h4>Popular</h4>
+        <p><span class="price">$199</span>/month</p>
+        <p> For most business that want<br>to optimize web queries</p>
+        <div class="checkbox">
+            <div><img src="icon/check_circle_black_24dp.svg"><span>All limited links</span></div>
+            <div><img src="icon/check_circle_black_24dp.svg"><span>Own analytics platform</span></div>
+            <div><img src="icon/check_circle_black_24dp.svg"><span>Chat support</span></div>
+            <div><img src="icon/check_circle_black_24dp.svg"><span>Optimize Hashtag</span></div>
+            <div><img src="icon/check_circle_black_24dp.svg"><span>Unlimited users</span></div>
+        </div>
+        <button>Choose plan</button>
+    </div>
+</div>
+<script>
+    var $slider = $("#slider");
+    var $fill = $(".bar .fill");
+
+    function setBar() {
+        $fill.css("width", $slider.val() + "%");
+    }
+
+    $slider.on("input", setBar);
+
+    setBar();
+</script>
+</body>
+</html>
